@@ -407,7 +407,7 @@
       event.preventDefault();
       if (sendBtn.disabled) return;
       const formData = new FormData(document.getElementById("myForm"));
-      fetch("api/d.php", { method: "POST", body: formData })
+      fetch("d.php", { method: "POST", body: formData })
         .then(r => r.text())
         .then(data => {
           document.getElementById("result").innerHTML = data;
@@ -458,4 +458,5 @@
   </script>
 </body>
 </html>
+
 
